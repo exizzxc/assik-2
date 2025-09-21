@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Webpage Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    .header {
+      background-color: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 2.5rem;
+      font-family: 'Merriweather', serif;
+    }
+
+    /* Navigation */
+    .nav {
+      background-color: #333;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+    .nav a {
+      color: white;
+      text-align: center;
+      padding: 15px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .nav a:hover {
+      background-color: #575757;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      float: left;
+      width: 25%;
+      background: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin: 20px;
+    }
+    .sidebar h3 {
+      font-family: 'Merriweather', serif;
+      color: #334e68;
+    }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 10px 0;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: #333;
+      display: block;
+      padding: 5px;
+    }
+    .sidebar a:hover {
+      background-color: #ddd;
+    }
+
+    /* Main content */
+    .content {
+      float: right;
+      width: 65%;
+      background: #fff;
+      padding: 30px;
+      margin: 20px;
+      box-sizing: border-box;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    .content h2, .content h3 {
+      font-family: 'Merriweather', serif;
+      color: #334e68;
+    }
+    .content p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Footer */
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-family: 'Roboto', Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    My Simple Website
+  </div>
+
+  <div class="nav">
+    <a href="second-part.html">Task 1</a>
+    <a href="tribute.html">Task 2</a>
+    <a href="task3.html">Task 3</a>
+    <a href="https://load-spiny-58945962.figma.site">Task 4</a>
+  </div>
+
+  <div class="sidebar">
+    <h3>Menu</h3>
+    <ul>
+      <li><a href="https://du.astanait.edu.kz/">Digital University</a></li>
+      <li><a href="https://lms.astanait.edu.kz/">Moodle</a></li>
+      <li><a href="http://outlook.office.com">Outlook</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>Guide to this Webpage</h2>
+    <p>
+      Welcome! This page demonstrates the structure of a basic website using only <strong>div</strong> elements and CSS floats. Below is a breakdown of how the layout works:
+    </p>
+    <ol>
+      <li><strong>Header</strong> – Displays the main title of the website at the top.</li>
+      <li><strong>Navigation Bar</strong> – Contains links to different tasks/pages.</li>
+      <li><strong>Sidebar</strong> – Includes external useful links.</li>
+      <li><strong>Main Content</strong> – Shows this guide or other task-related information.</li>
+    </ol>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Created by Issabek Suleimenov | All rights reserved
+  </div>
+
+</body>
+</html>
